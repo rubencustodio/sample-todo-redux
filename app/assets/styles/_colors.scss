@@ -1,0 +1,35 @@
+$black        : #3d3e41;
+$gray500      : #545f69;
+$gray400      : #758693;
+$gray300      : #c0c4c6;
+$gray200      : #e4e4e4;
+$gray100      : #f2f2f2;
+$white        : #ffffff;
+$gray-blue    : #588ccf;
+$blue         : #0ea6ec;
+$blue-purple  : #7784d9;
+$purple       : #af75dd;
+$pink         : #f14a8b;
+$red-orange   : #fe6f0a;
+$orange       : #fba100;
+$teal         : #06cab2;
+$green        : #6fc429;
+
+$colors: (
+  black: $black,
+  gray500: $gray500,
+  gray400: $gray400,
+  gray300: $gray300,
+  gray200: $gray200,
+  gray100: $gray100,
+  white: $white,
+  gray-blue: $gray-blue,
+  blue: $blue,
+  blue-purple: $blue-purple,
+  purple: $purple,
+  pink: $pink,
+  red-orange: $red-orange,
+  orange: $orange,
+  teal: $teal,
+  green: $green
+);

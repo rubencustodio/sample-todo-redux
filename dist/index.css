@@ -1,0 +1,969 @@
+@font-face {
+  font-family: MuseoSans300;
+  src: url("./fonts/MuseoSans_300.otf");
+  font-weight: 300; }
+
+@font-face {
+  font-family: MuseoSans500;
+  src: url("./fonts/MuseoSans_500.otf");
+  font-weight: 500; }
+
+@font-face {
+  font-family: MuseoSans700;
+  src: url("./fonts/MuseoSans_700.otf");
+  font-weight: 700; }
+
+@font-face {
+  font-family: MuseoSans900;
+  src: url("./fonts/MuseoSans_900.otf");
+  font-weight: 900; }
+
+@font-face {
+  font-family: SourceSansProRegular;
+  src: url("./fonts/SourceSansPro-Regular.ttf"); }
+
+@font-face {
+  font-family: SourceSansProSemibold;
+  src: url("./fonts/SourceSansPro-Semibold.ttf"); }
+
+@font-face {
+  font-family: SourceSansProItalic;
+  src: url("./fonts/SourceSansPro-SemiBoldItalic.ttf"); }
+
+/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+body {
+  margin: 0; }
+
+/**
+ * Add the correct display in IE 9-.
+ */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+/* Grouping content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+figcaption,
+figure,
+main {
+  /* 1 */
+  display: block; }
+
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */ }
+
+/**
+ * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+  font-weight: inherit; }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+  background-color: #ff0;
+  color: #000; }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+video {
+  display: inline-block; }
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+  border-style: none; }
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */ }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+details,
+menu {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item; }
+
+/* Scripting
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+canvas {
+  display: inline-block; }
+
+/**
+ * Add the correct display in IE.
+ */
+template {
+  display: none; }
+
+/* Hidden
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10-.
+ */
+[hidden] {
+  display: none; }
+
+/**
+ * Flex Grid -
+ * Version: 0.3.5
+ *
+ * Simple grid built with flex box and sass.
+ *
+ * Matthew Simo - matthew.a.simo@gmail.com
+ */
+/**
+ * Grid setup
+ *
+ * The grid will calculate dimensions based on these two variables:
+ * $fg-columns will inform the grid loops how many columns there should be.
+ * $fg-gutter will inform the grid loops how big eac column's gutters should be.
+ *
+ * The grid will name columns, rows, offsets based on these three variables:
+ * $fg-class-row string used for the row class
+ * $fg-class-col string used for the column class
+ * $fg-class-off string used for the offset class
+ */
+/**
+ * Break point namespace object
+ *
+ * Set the default namespace object with these defaults with the
+ * understanding that you can pass in whatever you might require for your site.
+ *
+ * $fg-breakpoints is a Sass list with nested lists inside. Each sub list defines two things.
+ * 1. The namespace for that breakpoint. (Required) (i.e. xs, sm, md, lg)
+ * 2. The min-width measurement for the breakpoint for that namespace. (i.e. 48em, 62em, 75em)
+ *
+ * Note: These should be in the proper order (at least till libsass handles map keys properly).
+ *
+ * Note: If the measurement is left out then it will be skipped when generating
+ * the grid and applied to global styles.
+ *
+ */
+/**
+ * Class Name Defaults
+ *
+ * Define class names for columns, rows and offsets in case compatibility with other
+ * libraries is necessary.
+
+
+/**
+ * Calculate column size percentage
+ */
+/**
+ * Spacing mixin to create uniform margin/padding
+ */
+/**
+ * Row wrapper class, flex box parent.
+ */
+.row {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem; }
+
+.col-xs, .col-sm, .col-md, .col-lg, .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0;
+  flex-shrink: 0;
+  min-height: 1px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem; }
+
+.col-xs, .col-sm, .col-md, .col-lg {
+  flex-grow: 1;
+  flex-basis: 0;
+  max-width: 100%; }
+
+/**
+ * Generate a set of grid column classes using a namespace
+ *
+ * .col-[namespace] for intelligent column division
+ * .col-[namespace]-[number] for a column that covers a specific number of columns (e.g. 1-12 by default)
+ * .off-[namespace]-[number] for pushing a col a specific number of columns (e.g. 1-11 by default)
+ * .off-[namespace]-reset for resetting a col's offset for that and larger namespaces
+ */
+/**
+ * Build the grid in two steps, to help minimize file size
+ * Step 1, for each namespace, create the grid-base
+ * Step 2, for each namespace, wrap the col width/offset measurements in their breakpoint media query
+ */
+.col-xs-1 {
+  flex-basis: 8.33333%;
+  max-width: 8.33333%; }
+
+.col-xs-2 {
+  flex-basis: 16.66667%;
+  max-width: 16.66667%; }
+
+.col-xs-3 {
+  flex-basis: 25%;
+  max-width: 25%; }
+
+.col-xs-4 {
+  flex-basis: 33.33333%;
+  max-width: 33.33333%; }
+
+.col-xs-5 {
+  flex-basis: 41.66667%;
+  max-width: 41.66667%; }
+
+.col-xs-6 {
+  flex-basis: 50%;
+  max-width: 50%; }
+
+.col-xs-7 {
+  flex-basis: 58.33333%;
+  max-width: 58.33333%; }
+
+.col-xs-8 {
+  flex-basis: 66.66667%;
+  max-width: 66.66667%; }
+
+.col-xs-9 {
+  flex-basis: 75%;
+  max-width: 75%; }
+
+.col-xs-10 {
+  flex-basis: 83.33333%;
+  max-width: 83.33333%; }
+
+.col-xs-11 {
+  flex-basis: 91.66667%;
+  max-width: 91.66667%; }
+
+.col-xs-12 {
+  flex-basis: 100%;
+  max-width: 100%; }
+
+.off-xs-1 {
+  margin-left: 8.33333%; }
+
+.off-xs-2 {
+  margin-left: 16.66667%; }
+
+.off-xs-3 {
+  margin-left: 25%; }
+
+.off-xs-4 {
+  margin-left: 33.33333%; }
+
+.off-xs-5 {
+  margin-left: 41.66667%; }
+
+.off-xs-6 {
+  margin-left: 50%; }
+
+.off-xs-7 {
+  margin-left: 58.33333%; }
+
+.off-xs-8 {
+  margin-left: 66.66667%; }
+
+.off-xs-9 {
+  margin-left: 75%; }
+
+.off-xs-10 {
+  margin-left: 83.33333%; }
+
+.off-xs-11 {
+  margin-left: 91.66667%; }
+
+.off-xs-reset {
+  margin-left: 0; }
+
+@media only screen and (min-width: 768px) {
+  .col-sm-1 {
+    flex-basis: 8.33333%;
+    max-width: 8.33333%; }
+  .col-sm-2 {
+    flex-basis: 16.66667%;
+    max-width: 16.66667%; }
+  .col-sm-3 {
+    flex-basis: 25%;
+    max-width: 25%; }
+  .col-sm-4 {
+    flex-basis: 33.33333%;
+    max-width: 33.33333%; }
+  .col-sm-5 {
+    flex-basis: 41.66667%;
+    max-width: 41.66667%; }
+  .col-sm-6 {
+    flex-basis: 50%;
+    max-width: 50%; }
+  .col-sm-7 {
+    flex-basis: 58.33333%;
+    max-width: 58.33333%; }
+  .col-sm-8 {
+    flex-basis: 66.66667%;
+    max-width: 66.66667%; }
+  .col-sm-9 {
+    flex-basis: 75%;
+    max-width: 75%; }
+  .col-sm-10 {
+    flex-basis: 83.33333%;
+    max-width: 83.33333%; }
+  .col-sm-11 {
+    flex-basis: 91.66667%;
+    max-width: 91.66667%; }
+  .col-sm-12 {
+    flex-basis: 100%;
+    max-width: 100%; }
+  .off-sm-1 {
+    margin-left: 8.33333%; }
+  .off-sm-2 {
+    margin-left: 16.66667%; }
+  .off-sm-3 {
+    margin-left: 25%; }
+  .off-sm-4 {
+    margin-left: 33.33333%; }
+  .off-sm-5 {
+    margin-left: 41.66667%; }
+  .off-sm-6 {
+    margin-left: 50%; }
+  .off-sm-7 {
+    margin-left: 58.33333%; }
+  .off-sm-8 {
+    margin-left: 66.66667%; }
+  .off-sm-9 {
+    margin-left: 75%; }
+  .off-sm-10 {
+    margin-left: 83.33333%; }
+  .off-sm-11 {
+    margin-left: 91.66667%; }
+  .off-sm-reset {
+    margin-left: 0; } }
+
+@media only screen and (min-width: 992px) {
+  .col-md-1 {
+    flex-basis: 8.33333%;
+    max-width: 8.33333%; }
+  .col-md-2 {
+    flex-basis: 16.66667%;
+    max-width: 16.66667%; }
+  .col-md-3 {
+    flex-basis: 25%;
+    max-width: 25%; }
+  .col-md-4 {
+    flex-basis: 33.33333%;
+    max-width: 33.33333%; }
+  .col-md-5 {
+    flex-basis: 41.66667%;
+    max-width: 41.66667%; }
+  .col-md-6 {
+    flex-basis: 50%;
+    max-width: 50%; }
+  .col-md-7 {
+    flex-basis: 58.33333%;
+    max-width: 58.33333%; }
+  .col-md-8 {
+    flex-basis: 66.66667%;
+    max-width: 66.66667%; }
+  .col-md-9 {
+    flex-basis: 75%;
+    max-width: 75%; }
+  .col-md-10 {
+    flex-basis: 83.33333%;
+    max-width: 83.33333%; }
+  .col-md-11 {
+    flex-basis: 91.66667%;
+    max-width: 91.66667%; }
+  .col-md-12 {
+    flex-basis: 100%;
+    max-width: 100%; }
+  .off-md-1 {
+    margin-left: 8.33333%; }
+  .off-md-2 {
+    margin-left: 16.66667%; }
+  .off-md-3 {
+    margin-left: 25%; }
+  .off-md-4 {
+    margin-left: 33.33333%; }
+  .off-md-5 {
+    margin-left: 41.66667%; }
+  .off-md-6 {
+    margin-left: 50%; }
+  .off-md-7 {
+    margin-left: 58.33333%; }
+  .off-md-8 {
+    margin-left: 66.66667%; }
+  .off-md-9 {
+    margin-left: 75%; }
+  .off-md-10 {
+    margin-left: 83.33333%; }
+  .off-md-11 {
+    margin-left: 91.66667%; }
+  .off-md-reset {
+    margin-left: 0; } }
+
+@media only screen and (min-width: 1200px) {
+  .col-lg-1 {
+    flex-basis: 8.33333%;
+    max-width: 8.33333%; }
+  .col-lg-2 {
+    flex-basis: 16.66667%;
+    max-width: 16.66667%; }
+  .col-lg-3 {
+    flex-basis: 25%;
+    max-width: 25%; }
+  .col-lg-4 {
+    flex-basis: 33.33333%;
+    max-width: 33.33333%; }
+  .col-lg-5 {
+    flex-basis: 41.66667%;
+    max-width: 41.66667%; }
+  .col-lg-6 {
+    flex-basis: 50%;
+    max-width: 50%; }
+  .col-lg-7 {
+    flex-basis: 58.33333%;
+    max-width: 58.33333%; }
+  .col-lg-8 {
+    flex-basis: 66.66667%;
+    max-width: 66.66667%; }
+  .col-lg-9 {
+    flex-basis: 75%;
+    max-width: 75%; }
+  .col-lg-10 {
+    flex-basis: 83.33333%;
+    max-width: 83.33333%; }
+  .col-lg-11 {
+    flex-basis: 91.66667%;
+    max-width: 91.66667%; }
+  .col-lg-12 {
+    flex-basis: 100%;
+    max-width: 100%; }
+  .off-lg-1 {
+    margin-left: 8.33333%; }
+  .off-lg-2 {
+    margin-left: 16.66667%; }
+  .off-lg-3 {
+    margin-left: 25%; }
+  .off-lg-4 {
+    margin-left: 33.33333%; }
+  .off-lg-5 {
+    margin-left: 41.66667%; }
+  .off-lg-6 {
+    margin-left: 50%; }
+  .off-lg-7 {
+    margin-left: 58.33333%; }
+  .off-lg-8 {
+    margin-left: 66.66667%; }
+  .off-lg-9 {
+    margin-left: 75%; }
+  .off-lg-10 {
+    margin-left: 83.33333%; }
+  .off-lg-11 {
+    margin-left: 91.66667%; }
+  .off-lg-reset {
+    margin-left: 0; } }
+
+h1 {
+  font-family: "MuseoSans500", sans-serif;
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 500; }
+
+h2 {
+  font-family: "MuseoSans500", sans-serif;
+  font-size: 21px;
+  line-height: 24px;
+  font-weight: 500; }
+
+h3 {
+  font-family: "MuseoSans300", sans-serif;
+  font-size: 21px;
+  line-height: 24px;
+  font-weight: 300; }
+
+h4 {
+  font-family: "MuseoSans500", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 500; }
+
+h5 {
+  font-family: "MuseoSans500", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500; }
+
+a,
+.floating-link, button, button.secondary, input[type="text"], h6 {
+  font-family: "MuseoSans700", sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 700; }
+
+h4.title, h5.title, h6.title, ul li, h3.title {
+  font-size: 18px;
+  line-height: 21px;
+  font-family: "MuseoSans900", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase; }
+
+h4.title {
+  font-size: 16px;
+  line-height: 18px; }
+
+h5.title {
+  font-size: 14px;
+  line-height: 16px; }
+
+h6.title, ul li {
+  font-size: 12px;
+  line-height: 14px; }
+
+strong,
+b, body,
+p {
+  font-family: 'SourceSansProRegular';
+  font-size: 16px;
+  line-height: 18px; }
+
+strong,
+b {
+  font-family: 'SourceSansProSemibold'; }
+
+a,
+.floating-link {
+  color: #0ea6ec;
+  text-transform: uppercase;
+  text-decoration: none; }
+  a:focus,
+  .floating-link:focus {
+    outline: none; }
+  a:hover,
+  .floating-link:hover {
+    text-decoration: underline; }
+  a:visited,
+  .floating-link:visited {
+    color: #7784d9; }
+
+button {
+  background: #3d3e41;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: 0;
+  padding: 13px 20px;
+  border-radius: 2px;
+  text-align: center;
+  transition: background 0.2s ease-out; }
+  button:hover {
+    background: #0ea6ec;
+    cursor: pointer;
+    box-shadow: 0 6px 4px rgba(0, 0, 0, 0.1); }
+  button:active {
+    box-shadow: 0 2px rgba(0, 0, 0, 0.1);
+    outline: 0; }
+  button:focus {
+    outline: 0; }
+  button.disabled, button[disabled] {
+    color: #c0c4c6;
+    background: #e4e4e4;
+    box-shadow: 0;
+    cursor: not-allowed; }
+    button.disabled:hover, button[disabled]:hover {
+      box-shadow: inherit; }
+
+button.secondary {
+  color: #545f69;
+  text-transform: uppercase;
+  background: #ffffff;
+  border: 1px solid #c0c4c6;
+  padding: 13px 20px;
+  border-radius: 2px;
+  text-align: center;
+  transition: "all" 0.2s ease-out; }
+
+input[type="text"] {
+  padding: 13px 20px;
+  border: 0;
+  border-radius: 2px; }
+
+* {
+  letter-spacing: 0;
+  box-sizing: border-box; }
+
+body,
+p {
+  color: #3d3e41; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0 0 10px; }
+
+ul {
+  list-style-type: none;
+  padding: 0; }
+  ul li {
+    margin-bottom: 10px; }
+
+code {
+  font-size: 12px;
+  font-weight: 300;
+  background: #f2f2f2;
+  padding: 1px 3px;
+  border-radius: 3px; }
+
+.hljs,
+.hljs-subst {
+  color: #f2f2f2; }
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0 1em;
+  background: #545f69; }
+
+.hljs-tag {
+  color: #c0c4c6; }
+
+.hljs-selector-tag,
+.hljs-name {
+  color: #fba100; }
+
+.hljs-attribute {
+  color: #06cab2; }
+
+.hljs-number {
+  color: #f14a8b; }
+
+.hljs-string {
+  color: #06cab2; }
+
+body {
+  background: #f2f2f2;
+  padding: 25px;
+  overflow-x: hidden; }
+
+.container {
+  display: flex; }
+
+div {
+  width: 500px;
+  margin: 0 auto;
+  padding: 100px 0;
+  text-align: center; }

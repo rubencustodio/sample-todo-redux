@@ -1,0 +1,20 @@
+@import 'core';
+
+@import 'hljs';
+
+body {
+  background: $gray100;
+  padding: 25px;
+  overflow-x: hidden;
+}
+
+.container {
+  display: flex;
+}
+
+div {
+  width: 500px;
+  margin: 0 auto;
+  padding: 100px 0;
+  text-align: center;
+}

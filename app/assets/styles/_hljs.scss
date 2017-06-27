@@ -1,0 +1,40 @@
+code {
+  font-size: $xs_font_size;
+  font-weight: $thin;
+  background: $gray100;
+  padding: 1px 3px;
+  border-radius: 3px;
+}
+
+.hljs, 
+.hljs-subst {
+    color: $gray100;
+}
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0 1em;
+  background: $gray500;
+}
+
+.hljs-tag {
+  color: $gray300;
+}
+
+.hljs-selector-tag,
+.hljs-name {
+  color: $orange;
+}
+
+.hljs-attribute {
+  color: $teal;
+}
+
+.hljs-number {
+  color: $pink;
+}
+
+.hljs-string {
+  color: $teal;
+}

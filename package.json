@@ -1,0 +1,35 @@
+{
+  "name": "spokeo_v10_styleguide",
+  "version": "1.0.0",
+  "description": "Spokeo Styleguide v.10.0",
+  "main": "index.js",
+  "author": "Ruben Custodio",
+  "license": "1.0",
+  "scripts": {
+    "start": "webpack && webpack-dev-server",
+    "build": "node-sass -w app/assets/styles/index.scss  dist/index.css"
+  },
+  "dependencies": {
+    "@types/core-js": "^0.9.41",
+    "@types/react": "^15.0.29",
+    "@types/react-dom": "^15.5.0",
+    "@types/react-redux": "^4.4.44",
+    "@types/react-router-dom": "^4.0.4",
+    "awesome-typescript-loader": "^3.1.3",
+    "clipboard": "^1.7.1",
+    "node-sass": "^4.5.3",
+    "normalize.css": "^7.0.0",
+    "prop-types": "^15.5.10",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-highlight.js": "^1.0.5",
+    "react-redux": "^5.0.5",
+    "react-router-dom": "^4.1.1",
+    "redux": "^3.7.0",
+    "sass-loader": "^6.0.5",
+    "ts-loader": "^2.1.0",
+    "typescript": "^2.3.4",
+    "webpack": "^2.6.1",
+    "webpack-dev-server": "^2.4.5"
+  }
+}

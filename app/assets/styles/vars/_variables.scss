@@ -1,0 +1,179 @@
+$museo_sans_300: 'MuseoSans300';
+$museo_sans_500: 'MuseoSans500';
+$museo_sans_700: 'MuseoSans700';
+$museo_sans_900: 'MuseoSans900';
+
+// Font-size
+$xs_font_size   : 12px;
+$sm_font_size   : 14px;
+$md_font_size   : 16px;
+$lg_font_size   : 18px;
+$xl_font_size   : 21px;
+$xxl_font_size  : 28px;
+
+// Font-weight
+$thin      : 300;
+$normal    : 400;
+$semi_bold : 600;
+$bold      : 700;
+$mega_bold : 900;
+
+// Line-height
+$xs_line_height   : 14px;
+$sm_line_height   : 16px;
+$md_line_height   : 21px;
+$lg_line_height   : 24px;
+$xl_line_height   : 36px;
+$xxl_line_height  : 42px;
+
+// Letter-spacing
+$default_letter_spacing: 0;
+$normal_letter_spacing: 1.2;
+
+
+%heading1 {
+  font-family: $museo_sans_500, sans-serif;
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 500;
+}
+
+%heading2 {
+  font-family: $museo_sans_500, sans-serif;
+  font-size: 21px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+%heading3 {
+  font-family: $museo_sans_300, sans-serif;
+  font-size: 21px;
+  line-height: 24px;
+  font-weight: 300;
+}
+
+%heading4 {
+  font-family: $museo_sans_500, sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 500;
+}
+
+%heading5 {
+  font-family: $museo_sans_500, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+%heading6 {
+  font-family: $museo_sans_700, sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 700;
+}
+
+%title1 {
+  font-size: 18px;
+  line-height: 21px;
+  font-family: $museo_sans_900, sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+%title2 {
+  @extend %title1;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+%title3 {
+  @extend %title1;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+%title4 {
+  @extend %title1;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+%paragraph1 {
+  font-family: 'SourceSansProRegular';
+  font-size: 16px;
+  line-height: 18px;
+}
+
+%paragraph1-bold {
+  @extend %paragraph1;
+  font-family: 'SourceSansProSemibold';
+}
+
+%paragraph1-italic {
+  @extend %paragraph1;
+  font-family: 'SourceSansProItalic';
+}
+
+%paragraph2 {
+  font-family: 'SourceSansProRegular';
+  font-size: 14px;
+  line-height: 18px;
+}
+
+%paragraph2-bold {
+  @extend %paragraph2;
+  font-family: 'SourceSansProSemibold';
+  font-size: 12px;
+  line-height: 18px;
+}
+
+%paragraph2-italic {
+  @extend %paragraph2;
+  font-family: 'SourceSansProItalic';
+  font-size: 12px;
+  line-height: 14px;
+}
+
+
+
+
+
+%floating-link {
+  @extend %heading6;
+  color: $blue;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:visited {
+    color: $blue-purple;
+  }
+}
+
+%inline-link {
+  @extend %heading6;
+  color: $blue;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:visited {
+    color: $blue-purple;
+  }
+}
+

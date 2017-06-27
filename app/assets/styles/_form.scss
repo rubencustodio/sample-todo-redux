@@ -1,0 +1,11 @@
+button {
+  @extend %button;
+}
+
+button.secondary {
+  @extend %button-secondary;
+}
+
+input[type="text"] {
+  @extend %input-text;
+}

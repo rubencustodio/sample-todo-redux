@@ -1,0 +1,3 @@
+@mixin spokeo-transition($prop: 'all') {
+  transition: $prop .2s ease-out;
+}

@@ -1,0 +1,80 @@
+* {
+  letter-spacing: $default_letter_spacing;
+  box-sizing: border-box;
+}
+
+body, 
+p {
+  color: $black;
+  @extend %paragraph1;
+}
+
+strong, 
+b {
+  @extend %paragraph1-bold;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0 0 10px;
+}
+
+h1 {
+  @extend %heading1;
+}
+
+h2 {
+  @extend %heading2;
+}
+
+h3 {
+  @extend %heading3;
+
+  &.title {
+    @extend %title1;
+  }
+}
+
+h4 {
+  @extend %heading4;
+
+  &.title {
+    @extend %title2;
+  }
+}
+
+h5 {
+  @extend %heading5;
+
+  &.title {
+    @extend %title3;
+  }
+}
+
+h6 {
+  @extend %heading6;
+
+  &.title {
+    @extend %title4;
+  }
+}
+
+a, 
+.floating-link {
+ @extend %floating-link; 
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+
+  li {
+    @extend %title4;
+    margin-bottom: 10px;
+  }
+}
